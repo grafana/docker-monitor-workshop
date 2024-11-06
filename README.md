@@ -10,6 +10,7 @@ The aim of this workshop is to provide a hands-on experience with monitoring Doc
 - Docker
 - Docker Compose
 - Git
+- curl
 
 ## Running the Demo
 
@@ -54,6 +55,18 @@ Currently the workshop will monitor the containers deployed which most likely wi
 ### Deploy the greenhouse microservices demo
 ```bash
 docker compose -f "greenhouse/docker-compose-micro.yml" up -d --build
+```
+
+### Step 4: Bringing Deployment down
+
+```bash
+docker-compose down
+```
+
+Similarly for the greenhouse microservices demo:
+
+```bash
+docker compose -f "greenhouse/docker-compose-micro.yml" down
 ```
 
 
