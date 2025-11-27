@@ -1,7 +1,7 @@
 bidict==0.23.1
 blinker==1.7.0
 click==8.1.7
-Flask==3.0.3
+Flask==3.1.2
 Flask-SocketIO==5.3.6
 Flask-SQLAlchemy==3.1.1
 h11==0.16.0
