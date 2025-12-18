@@ -1,7 +1,7 @@
  version: '3'
  services:
    loki:
-     image: grafana/loki:3.2.0
+     image: grafana/loki:3.6.3@sha256:cd6e176883a90c21755f0315688668991634143423f75bdedfef41441b0fdc3c
      ports:
        - "3100:3100"
      volumes:
