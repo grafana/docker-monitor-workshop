@@ -7,7 +7,7 @@ Flask-SQLAlchemy==3.1.1
 h11==0.16.0
 itsdangerous==2.1.2
 Jinja2==3.1.6
-MarkupSafe==2.1.5
+MarkupSafe==3.0.3
 python-engineio==4.9.0
 python-socketio==5.14.0
 simple-websocket==1.0.0
