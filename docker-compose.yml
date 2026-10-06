@@ -8,7 +8,7 @@
       - ./loki-config.yaml:/etc/loki/local-config.yaml
      command: -config.file=/etc/loki/local-config.yaml
    prometheus:
-     image: prom/prometheus:v2.51.0
+     image: prom/prometheus:v3.15.0@sha256:efd719c99d83b060d9daefdcf00360461adf279f45ef5391f8d111892118753e
      command:
        - --web.enable-remote-write-receiver
        - --config.file=/etc/prometheus/prometheus.yml
