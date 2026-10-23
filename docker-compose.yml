@@ -8,7 +8,7 @@
       - ./loki-config.yaml:/etc/loki/local-config.yaml
      command: -config.file=/etc/loki/local-config.yaml
    prometheus:
-     image: prom/prometheus:v2.51.0
+     image: prom/prometheus:v2.51.0@sha256:5ccad477d0057e62a7cd1981ffcc43785ac10c5a35522dc207466ff7e7ec845f
      command:
        - --web.enable-remote-write-receiver
        - --config.file=/etc/prometheus/prometheus.yml
@@ -48,11 +48,11 @@
            editable: false
          EOF
          /run.sh
-     image: grafana/grafana:latest
+     image: grafana/grafana:latest@sha256:dbbc38ea21103cefb50396340cd88afec779c7e070b0a7bf5a75b4ce46651d3f
      ports:
        - "3000:3000"
    alloy:
-    image: grafana/alloy:latest
+    image: grafana/alloy:latest@sha256:89a5a320168387336b9ac3c850609c3ba7757eadd4ae5f1d819deb35e9854b18
     ports:
       - 12345:12345
       - 4317:4317
